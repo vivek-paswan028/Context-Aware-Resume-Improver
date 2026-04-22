@@ -116,7 +116,7 @@ def setup_sidebar():
         api_key_loaded = check_api_key()
 
         if api_key_loaded:
-            st.success("✅ API key loaded from environment")
+            st.success("✅ API key loaded successfully")
         else:
             st.error("❌ API key not found")
             st.markdown(
@@ -157,9 +157,9 @@ def setup_sidebar():
         st.divider()
 
         st.subheader("🔒 Security")
-        st.info(
-            "API key is loaded from `.env` file and never exposed in the UI."
-        )
+        # st.info(
+        #     "API key is loaded from `.env` file and never exposed in the UI."
+        # )
 
         if st.button("🗑️ Clear Analysis", use_container_width=True):
             st.session_state.analysis_result = None
