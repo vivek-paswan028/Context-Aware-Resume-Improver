@@ -1,0 +1,10 @@
+.env.example
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv      
+.env.*        # Ignore all .env files, including .env.local, .env.production, etc.
+venv/
+    
